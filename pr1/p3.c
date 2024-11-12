@@ -28,6 +28,7 @@ int main()
                 break;
             default:
                 puts("We dont serve Grass Sir");
+                break;
             }
         case 'n':
             puts("1:Mutton-pulav 2:Chicken-chilly 3:Fish-fry. Your choice plz");
@@ -45,11 +46,14 @@ int main()
                 break;
             default:
                 puts("We dont serve Lizards Maam");
+                break;
             }
+            default:
+            puts("invalid choice. pleace select either v for veg or n for non-veg.");
         }
         puts("Do you wish to have more? 1:Yes 2:No");
         scanf("%d", &choice);
-    } while (choice != 1);
+    } while (choice != 2);
     puts("Thank you Visit again");
     return 0;
 }
